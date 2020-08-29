@@ -15,7 +15,7 @@ def list_manipulation(list,command,location,value = None):
         list.insert(0,value)
         return list
     elif command == "add" and location =="end":
-        list.append(,value)
+        list.append(value)
         return list
 
 print (list_manipulation([1,2,3],"remove","end"))
