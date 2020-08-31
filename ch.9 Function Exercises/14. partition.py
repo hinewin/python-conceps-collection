@@ -17,13 +17,13 @@ def partition(list,callback):
             true_list.append(i)
         else:
             false_list.append(i)
-    return true_list,false_list
+    return [true_list,false_list]
 
 print(partition([1,2,3,4], isEven))
 
 
 #Solution 2:
 def partition2(list,fn):
-    return [i for i in list if fn(i)], [i for i in list if not fn(i)]
+    return [[i for i in list if fn(i)], [i for i in list if not fn(i)]]
 
 print(partition2([1,2,3,4], isEven))
