@@ -30,14 +30,17 @@ inactive_users = list(filter(lambda u: not u['tweets'],users))
 # if we leave it lambda u: u['tweets'] in list user, it will return
 # users that tweeted. True != []
 #hence we have to add not since it will include EMPTY string
-#print (inactive_users)
+print (inactive_users)
 # it will print out the whole dictionary
 
 ## Now we want to only Return ONLY usernames
-list(map(lambda u: u['username'].upper(),# for each user, only select user
+advanced = list(map(lambda u: u['username'].upper(),# for each user, only select user
 #instead of iterating through the whole dictionary
 #we can iterate through the filtered out dictionary
     filter(lambda u: not u['tweets'],users)))
+
+print (advanced)
+
 #ex4
 #Return a new list with the string 
 #"Your instructor is" + each value in the list if value <5 char
