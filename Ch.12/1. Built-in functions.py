@@ -15,3 +15,4 @@ print (ex3)
 
 ex4= any([num for num in [2,3,4,6,8] if num %2==0])
 print (ex4)
+# Tru because most are evens
