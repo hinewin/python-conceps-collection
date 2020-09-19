@@ -14,3 +14,7 @@ print (sum([1,2,3])) # 1+2+3= 6
 # start at 10
 print (sum([1,2,3],10)) # 10+(1+2+3)= 16
 
+### Round- return number rounded to ndigits precision 
+# if ndigits is omitted/ none, returns nearest integer
+print (round(10.2)) # 10
+print (round(1.215121,2)) #1.22
