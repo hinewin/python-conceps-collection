@@ -4,8 +4,13 @@
 
 names= [{'first': 'Elie', 'last': 'Schoppik'}, {'first': 'Colt', 'last': 'Steele'}]
 
-def extract_full_game(dic):
-    return list (map(lambda c: "{c['first']} {c['last']}", dic))
+# def extract_full_game(dic):
+#     return [f"{char['first']} {char['last']}" for char in dic]
 #extract_full_name(names) # ['Elie Schoppik', 'Colt Steele'
 
-print (extract_full_game(names))
+
+def extract_full_name(dict):
+    return list(map(lambda char : "{} {}".format(char ['first'],char['last']), dict))
+# map (to iterate) for each char in dict,
+# {}{}/ 1st{}= first name, 2nd {} = last for each item in DICT
+print (extract_full_name(names))
