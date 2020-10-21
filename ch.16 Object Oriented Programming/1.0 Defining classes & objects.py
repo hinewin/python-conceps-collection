@@ -6,3 +6,7 @@
 #*- contain methods (functions) and attributes (like key&dict)
 # Instance- objects that are constructred from a class blueprint
 #*- contain their class methods and properties
+
+nums = [1,2,3]
+# Here we have num as the class of LIST
+# and [1,2,3] are instances 
